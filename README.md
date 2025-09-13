@@ -123,8 +123,6 @@ src/
 - Validação de formulários
 - Persistência no localStorage
 
-## 👨‍💻 Autor
-
 Desenvolvido para o Workshop Frontend Fábrica 25.2
 
 ---
