@@ -6,29 +6,38 @@ const FavoritesContext = createContext();
 
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
+  // Carregar favoritos do localStorage apenas no cliente
   useEffect(() => {
-    try {
-      const savedFavorites = localStorage.getItem('pokemon-favorites');
-      if (savedFavorites) {
-        const parsedFavorites = JSON.parse(savedFavorites);
-        if (Array.isArray(parsedFavorites)) {
-          setFavorites(parsedFavorites);
+    if (typeof window !== 'undefined') {
+      try {
+        const savedFavorites = localStorage.getItem('pokemon-favorites');
+        if (savedFavorites) {
+          const parsedFavorites = JSON.parse(savedFavorites);
+          if (Array.isArray(parsedFavorites)) {
+            setFavorites(parsedFavorites);
+          }
         }
+      } catch (error) {
+        console.error('Erro ao carregar favoritos do localStorage:', error);
+        setFavorites([]);
+      } finally {
+        setIsLoaded(true);
       }
-    } catch (error) {
-      console.error('Erro ao carregar favoritos do localStorage:', error);
-      setFavorites([]);
     }
   }, []);
 
+  // Salvar favoritos no localStorage apenas quando necessário
   useEffect(() => {
-    try {
-      localStorage.setItem('pokemon-favorites', JSON.stringify(favorites));
-    } catch (error) {
-      console.error('Erro ao salvar favoritos no localStorage:', error);
+    if (isLoaded && typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('pokemon-favorites', JSON.stringify(favorites));
+      } catch (error) {
+        console.error('Erro ao salvar favoritos no localStorage:', error);
+      }
     }
-  }, [favorites]);
+  }, [favorites, isLoaded]);
 
   const addToFavorites = (pokemon) => {
     setFavorites(prev => {
