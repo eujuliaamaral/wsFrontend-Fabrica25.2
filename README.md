@@ -127,66 +127,9 @@ src/
 - Validação de formulários
 - Persistência no localStorage
 
-### 📊 Página de Detalhes
-- Informações completas do Pokémon
-- Tipos traduzidos para português
-- Estatísticas com barras de progresso
-- Habilidades traduzidas
-- Design responsivo e moderno
-
-## 🌐 Deploy
-
-O projeto está configurado para deploy no Vercel:
-
-1. **Conecte seu repositório ao Vercel**
-2. **Configure as variáveis de ambiente** (se necessário)
-3. **Deploy automático** a cada push
-
-## 🎨 Design
-
-- **Paleta de Cores** - Gradientes suaves e modernos
-- **Tipografia** - Fontes do Google (Geist)
-- **Componentes** - Design system consistente
-- **Animações** - Transições suaves e hover effects
-- **Responsividade** - Mobile-first approach
-
-## 🔧 Scripts Disponíveis
-
-```bash
-npm run dev      # Servidor de desenvolvimento
-npm run build    # Build para produção
-npm run start    # Servidor de produção
-npm run lint     # Verificação de código
-```
-
-## 📱 Responsividade
-
-- **Mobile** - Layout otimizado para smartphones
-- **Tablet** - Adaptação para telas médias
-- **Desktop** - Experiência completa em telas grandes
-
-## 🚀 Performance
-
-- **React Query** - Cache inteligente de dados
-- **Lazy Loading** - Carregamento otimizado de imagens
-- **Code Splitting** - Divisão automática do código
-- **Otimizações** - Bundle otimizado para produção
-
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
 ## 👨‍💻 Autor
 
-Desenvolvido com ❤️ para o Workshop Frontend Fábrica 25.2
+Desenvolvido para o Workshop Frontend Fábrica 25.2
 
 ---
 
