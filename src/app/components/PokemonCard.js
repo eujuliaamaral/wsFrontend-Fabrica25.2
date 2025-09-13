@@ -48,6 +48,8 @@ export default function PokemonCard({ pokemon, layout = 'grid', onEdit, onDelete
               {pokemon.name}
             </h3>
             <p className="text-sm text-gray-600">ID: #{pokemon.id.toString().padStart(3, '0')}</p>
+            {/* Peso em kg */}
+            <p className="text-sm text-gray-600">Peso: {pokemon.weight} kg</p>
             {isCustomPokemon && (
               <span className="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full mt-1">
                 ✨ Customizado
@@ -148,6 +150,10 @@ export default function PokemonCard({ pokemon, layout = 'grid', onEdit, onDelete
           </h3>
           <p className="text-sm text-gray-600 mb-2">
             ID: #{pokemon.id.toString().padStart(3, '0')}
+          </p>
+          {/* Peso em kg */}
+          <p className="text-sm text-gray-600 mb-2">
+            Peso: {pokemon.weight} kg
           </p>
           {isCustomPokemon && (
             <span className="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full mb-2">
