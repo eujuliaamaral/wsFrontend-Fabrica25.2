@@ -40,7 +40,7 @@ Uma aplicação web moderna e interativa para explorar o mundo dos Pokémon, des
 - **React Query** - Gerenciamento de estado e cache
 - **Headless UI** - Componentes acessíveis
 - **Heroicons** - Ícones SVG
-- **PokeAPI** - API oficial dos Pokémon
+- **PokeAPI** - API oficial dos Pokémons
 
 ## 🚀 Como Executar
 
