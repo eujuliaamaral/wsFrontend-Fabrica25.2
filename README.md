@@ -44,10 +44,6 @@ Uma aplicação web moderna e interativa para explorar o mundo dos Pokémon, des
 
 ## 🚀 Como Executar
 
-### Pré-requisitos
-- Node.js 18+ 
-- npm ou yarn
-
 ### Instalação
 
 1. **Clone o repositório**
