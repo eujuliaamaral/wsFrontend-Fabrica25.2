@@ -48,8 +48,8 @@ Uma aplicação web moderna e interativa para explorar o mundo dos Pokémon, des
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/SEU-USERNAME/wsFrontend-Fabrica25.2.git
-cd wsFrontend-Fabrica25.2/meu-projeto-pokemon
+git clone https://github.com/eujuliaamaral/wsFrontend-Fabrica25.2.git
+cd wsFrontend-Fabrica25.2/
 ```
 
 2. **Instale as dependências**
@@ -70,32 +70,19 @@ http://localhost:3000
 ## 📁 Estrutura do Projeto
 
 ```
-src/
-├── app/
-│   ├── components/
-│   │   ├── PokemonCard.js
-│   │   ├── Navbar.js
-│   │   ├── Footer.js
-│   │   ├── CriarPokemonModal.js
-│   │   └── EditarPokemonModal.js
-│   ├── context/
-│   │   └── FavoritesContext.js
-│   ├── hooks/
-│   │   ├── usePokemons.js
-│   │   └── useCustomPokemons.js
-│   ├── providers/
-│   │   └── QueryProvider.js
-│   ├── utils/
-│   │   └── traducoes.js
-│   ├── favoritos/
-│   │   └── page.js
-│   ├── pokemon/
-│   │   └── [id]/
-│   │       ├── page.js
-│   │       └── DetalhesPokemon.js
-│   ├── layout.js
-│   ├── page.js
-│   └── globals.css
+WSFRONTENDFABRICA25.2/
+├── 📁 .next/                    # Arquivos gerados pelo Next.js (build)
+├── 📁 node_modules/             # Dependências do projeto
+├── 📁 public/                   # Arquivos estáticos públicos
+├── 📁 src/                      # Código fonte da aplicação
+├── 📄 .gitignore               # Arquivos ignorados pelo Git
+├── ⚙️ eslint.config.mjs        # Configurações do ESLint
+├── 📋 jsconfig.json            # Configurações do JavaScript/TypeScript
+├── ⚙️ next.config.mjs          # Configurações do Next.js
+├── 🔒 package-lock.json        # Lock file das dependências
+├── 📦 package.json             # Dependências e scripts do projeto
+├── 🎨 postcss.config.mjs       # Configurações do PostCSS
+└── 📖 README.md                # Documentação do projeto
 ```
 
 ## 🎯 Funcionalidades Detalhadas
