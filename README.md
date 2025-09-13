@@ -3,7 +3,7 @@
 Uma aplicação web moderna e interativa para explorar o mundo dos Pokémon, desenvolvida com Next.js, React Query e Tailwind CSS.
 
 ## 🚀 Deploy
-Acesse o projeto online: [ws-frontend-fabrica25-2-lilac.vercel.app](https://ws-frontend-fabrica25-2-lilac.vercel.app)
+Projeto online: [ws-frontend-fabrica25-2-lilac.vercel.app](https://ws-frontend-fabrica25-2-lilac.vercel.app)
 
 ## ✨ Funcionalidades
 
