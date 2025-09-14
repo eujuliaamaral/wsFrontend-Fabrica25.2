@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useFavorites } from '../context/FavoritesContext';
 import PokemonCard from '../components/PokemonCard';
+import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
 export default function PaginaFavoritos() {
   const { favorites } = useFavorites();
@@ -12,6 +13,19 @@ export default function PaginaFavoritos() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Botão voltar - só aparece quando há favoritos */}
+      {favoritesList.length > 0 && (
+        <div className="mb-4">
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-md hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <ArrowLeftIcon className="h-4 w-4" />
+            Voltar para Pokédex
+          </Link>
+        </div>
+      )}
+
       <div className="text-center mb-8">
         <div className="text-center mb-4">
           <h1 className="text-4xl font-bold text-white">
