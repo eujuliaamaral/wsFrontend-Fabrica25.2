@@ -46,7 +46,7 @@ export default function CriarPokemonModal({ isOpen, onClose, onPokemonCriado }) 
         id: novoId,
         name: formData.nome.toLowerCase(),
         height: parseInt(formData.altura) || 0,
-        weight: parseInt(formData.peso) || 0,
+        weight: parseFloat(formData.peso) * 10 || 0,
         base_experience: Math.floor(Math.random() * 200) + 50,
         order: novoId,
         types: [{ type: { name: formData.tipo } }],
@@ -161,14 +161,15 @@ export default function CriarPokemonModal({ isOpen, onClose, onPokemonCriado }) 
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Peso (g)
+                Peso (kg)
               </label>
               <input
                 type="number"
+                step="0.1"
                 value={formData.peso}
                 onChange={(e) => setFormData({...formData, peso: e.target.value})}
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
-                placeholder="Ex: 600"
+                placeholder="Ex: 6.0"
               />
             </div>
 
